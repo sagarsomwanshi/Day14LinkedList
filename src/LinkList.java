@@ -17,6 +17,7 @@ public class LinkList {
         ll.link.add(70);
 
             int check=0;
+            int node=0;
         for(int i = 0; i<ll.link.size();i++){
             if(ll.link.get(i) == 30){
                 System.out.println("link list contains 30");
@@ -32,8 +33,17 @@ public class LinkList {
         ll.link.add(2,40);
         System.out.println("\nLink list after inserting 40 : "+ll.link);
 
+        for(int i = 0; i<ll.link.size();i++) {
+            if (ll.link.get(i) == 40) {
+                node = i;
+            }
+        }
+            ll.link.remove(node);
+            System.out.println("\nLink list after deleting 40 : "+ll.link);
+            System.out.println("size of link list after deleting 40 : "+ll.link.size());
 
     }
+
     public boolean checkThirty(LinkedList<Integer> l){
         return l.contains(30);
 
