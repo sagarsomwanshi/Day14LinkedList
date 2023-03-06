@@ -19,15 +19,18 @@ public class LinkList {
             int check=0;
         for(int i = 0; i<ll.link.size();i++){
             if(ll.link.get(i) == 30){
-
                 System.out.println("link list contains 30");
                 check = 1;
             }
-
         }
         if(check != 1){
             System.out.println("link list dose not contain 30");
         }
+
+        System.out.println("\nLink list before inserting 40 : "+ll.link);
+
+        ll.link.add(2,40);
+        System.out.println("\nLink list after inserting 40 : "+ll.link);
 
 
     }
