@@ -5,8 +5,8 @@ public class LinkList {
         link.add(56);
         link.add(30);
         link.add(70);
-        System.out.println("link list before deleting 56 : "+link);
-        link.removeFirst();
+        System.out.println("link list before deleting 70 : "+link);
+        link.removeLast();
         System.out.println("Linked list : "+link);
 
     }
